@@ -1,0 +1,8 @@
+port a ->  input digits
+port d ->   pin 1 : +
+            pin 2: -
+            pin 3: *
+            pin 4: /
+            pin 5: exp
+
+= can be any button from port d

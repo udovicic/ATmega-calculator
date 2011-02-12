@@ -19,10 +19,6 @@ PRJSRC=calculator.c
 INC=
 # libraries to link in (e.g. -lmylib)
 LIBS=
-# Optimization level, 
-# use s (size opt), 1, 2, 3 or 0 (off)
-OPTLEVEL=0
-
 
 AVRDUDE_PROGRAMMERID=stk500
 AVRDUDE_PORT=/dev/ttyS1
@@ -33,7 +29,7 @@ AVRDUDE_PORT=/dev/ttyS1
 HEXFORMAT=ihex
 
 # compiler
-CFLAGS=-I. $(INC) -g -mmcu=$(MCU) -O$(OPTLEVEL) \
+CFLAGS=-I. $(INC) -g -mmcu=$(MCU) \
 	-fpack-struct -fshort-enums             \
 	-funsigned-bitfields -funsigned-char    \
 	-Wall -Wstrict-prototypes               \
